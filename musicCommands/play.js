@@ -157,7 +157,7 @@ async function playSong(connection, searchQuery, message) {
            .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()  
         .setCustomId('display_queue')
-        .setLabel('Queue')
+        .setLabel('Очередь')
         .setEmoji('📄')
         .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()  
