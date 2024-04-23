@@ -16,7 +16,7 @@ module.exports = {
         iconURL: 'https://cdn.discordapp.com/attachments/1175487983915376662/1175667506791325706/communication.png?ex=656c10b0&is=65599bb0&hm=e378f1b355a2401bcab504b08a0766001d6b7c090c91ce0a7a7a87c868feb955&', 
         url: 'https://discord.gg/FUEHs7RCqz'
     })
-     
+      (
         // Basic commands category
         // Music commands category
         {
