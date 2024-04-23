@@ -12,10 +12,10 @@ module.exports = {
     }
 
     // Переключаем флаг повтора текущего трека
-    player.setQueueRepeat(!player.queueRepeat);
+    player.queue.repeat = !player.queue.repeat;
 
     // Отправляем сообщение об изменении состояния повтора
-    const state = player.queueRepeat ? 'включен' : 'выключен';
+    const state = player.queue.repeat ? 'включен' : 'выключен';
     message.reply(`Повтор трека теперь ${state}.`);
   },
 };
