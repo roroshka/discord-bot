@@ -11,11 +11,11 @@ module.exports = {
       return message.reply('На сервере не играет музыка.');
     }
 
-    // Переключаем флаг повтора текущего трека
-    player.setTrackRepeat(!player.queueRepeat);
+    // Переключаем режим повторения трека
+    player.setTrackRepeat(!player.trackRepeat);
 
     // Отправляем сообщение об изменении состояния повтора
-    const state = player.queueRepeat ? 'включен' : 'выключен';
+    const state = player.trackRepeat ? 'включен' : 'выключен';
     message.reply(`Повтор трека теперь ${state}.`);
   },
 };
