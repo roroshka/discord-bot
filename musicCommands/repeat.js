@@ -1,3 +1,6 @@
+const { MessageEmbed } = require('discord.js');
+const fs = require("fs");
+
 module.exports = {
   name: 'repeat',
   aliases: ['rep'],
