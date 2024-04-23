@@ -43,6 +43,6 @@ module.exports = {
     const row = new MessageActionRow()
       .addComponents(button1, button2, button3);
 
-    message.reply({ embeds: [embed], components: [row] });
+    message.reply({ embeds: [embed], components: [row] }).catch(console.error);
   },
 };
