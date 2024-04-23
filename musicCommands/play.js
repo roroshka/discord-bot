@@ -142,17 +142,17 @@ async function playSong(connection, searchQuery, message) {
       .addComponents(
         new ButtonBuilder()
           .setCustomId('pause')
-          .setLabel('Pause')
+          .setLabel('Пауза')
           .setEmoji('⏸️')
            .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()
           .setCustomId('resume')
-          .setLabel('Resume')
+          .setLabel('Продолжить')
         .setEmoji('▶️')
            .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()
           .setCustomId('skip')
-          .setLabel('Skip')
+          .setLabel('Скип')
          .setEmoji('⏭️')
            .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()  
@@ -161,7 +161,7 @@ async function playSong(connection, searchQuery, message) {
         .setEmoji('📄')
         .setStyle(ButtonStyle.Primary),
         new ButtonBuilder()  
-        .setLabel('Link')
+        .setLabel('Ссылка')
          .setURL(youtubeLink)
         .setStyle(ButtonStyle.Link)      
       );
@@ -292,7 +292,7 @@ module.exports = {
   execute: async (message, args) => {
     const voiceChannel = message.member.voice.channel;
     if (!voiceChannel) {
-      return message.reply('**⚠️ You need to be in a voice channel!**');
+      return message.reply('** в войс зайди еблан⚠️**');
     }
 
     const searchQuery = args.join(' ');
